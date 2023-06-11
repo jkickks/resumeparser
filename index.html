@@ -1,0 +1,85 @@
+<html>
+<head>
+  <title>Welcome to Josue's Resume Parser!</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    
+    h1 {
+      color: #333;
+    }
+    
+    .upload-form {
+      margin: 50px auto;
+      max-width: 400px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .upload-form input[type="file"] {
+      display: none;
+    }
+    
+    .upload-form label {
+      display: block;
+      margin-bottom: 15px;
+      cursor: pointer;
+      font-size: 18px;
+      color: #333;
+    }
+    
+    .upload-form label span {
+      border: 2px dashed #ccc;
+      padding: 10px;
+      display: inline-block;
+      width: 200px;
+    }
+    
+    .upload-form button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    .resume-image {
+      margin-top: 50px;
+      max-width: 300px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .coding-gif {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Josue's Resume Parser!</h1>
+  <div class="upload-form">
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <label for="fileToUpload">
+        Please Upload Your Resume as a PDF File
+        <br>
+        <span>Click Here to Select a File</span>
+      </label>
+      <input type="file" name="fileToUpload" id="fileToUpload">
+      <br>
+      <input type="submit" value="Upload">
+    </form>
+  </div>
+  <img class="resume-image" src="resume-sample.jpg" alt="Sample Resume">
+
+  <h1>Find Out What Role is Best Fit For You!</h1>
+  <img class="coding-gif" src="coding-animation.gif" alt="Coding GIF">
+</body>
+</html>
